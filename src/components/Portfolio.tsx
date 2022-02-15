@@ -274,7 +274,7 @@ const RsvpStakingDescriptionText = () => {
             <boxGeometry args={[2.9,1.16,1]}/>
             <meshBasicMaterial color='grey'/>
         </mesh>
-        <group ref={groupText} scale={[0.55,0.55,1]} position={[-1.45, 0.4, -1]}>
+        <group ref={groupText} scale={[0.5,0.5,1]} position={[-1.45, 0.4, -1]}>
         <Text color='white' font={RobertoFont}>
             RSVP Staking Project
         </Text>
@@ -325,10 +325,10 @@ const PortfolioDescriptionText = () => {
     };
 
     const handleWebsite = () => {
-        window.open('https://avalanche-battleboobas-calculator.vercel.app/', '_blank');
+        window.open('https://saravut-portfolio.vercel.app/', '_blank');
     };
     const handleGithub = () => {
-        window.open('https://github.com/SRVng/avalanche-battleboobas-calculator', '_blank');
+        window.open('https://github.com/SRVng/portfolio-frontend', '_blank');
     };
 
     useEffect(() => {
@@ -342,7 +342,7 @@ const PortfolioDescriptionText = () => {
             <boxGeometry args={[10,5.6,1]}/>
             <meshBasicMaterial color='grey'/>
         </mesh>
-        <group ref={groupText} scale={[1.25,1.25,1]} position={[2.48, 0.9, 2]}>
+        <group ref={groupText} scale={[1.15,1.15,1]} position={[2.48, 0.9, 2]}>
         <Text color='white' font={RobertoFont}>
             Portfolio Website
         </Text>

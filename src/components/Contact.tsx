@@ -26,7 +26,7 @@ const Contact = (props: SideNavBarProps) => {
                     <ButtonBox onClick={() => {window.open('https://github.com/SRVng/avalanche-battleboobas-calculator','_blank')}}>
                         BattleBoobas Calculator
                     </ButtonBox>
-                    <ButtonBox onClick={() => {window.open('https://github.com/SRVng','_blank')}}>
+                    <ButtonBox onClick={() => {window.open('https://github.com/SRVng/portfolio-frontend','_blank')}}>
                         Portfolio
                     </ButtonBox>
                     <ButtonBox onClick={() => {window.open('https://github.com/SRVng/solidity-avalanche-RSVP-staking-event-frontend','_blank')}}>
@@ -65,7 +65,7 @@ const Contact = (props: SideNavBarProps) => {
                     <ButtonBox onClick={() => {window.open('https://rsvp-staking.vercel.app/','_blank')}}>
                         RSVP Staking Event
                     </ButtonBox>
-                    <ButtonBox onClick={() => {window.open('https://github.com/SRVng','_blank')}}>
+                    <ButtonBox onClick={() => {window.open('https://saravut-portfolio.vercel.app/','_blank')}}>
                         Portfolio Website
                     </ButtonBox>
                 </div>

@@ -37,6 +37,10 @@
     cursor: pointer;
 }
 
+.menu p:hover {
+    text-shadow: 0 0 20px white;
+}
+
 .menu :nth-child(n) {
     height: 20px;
     text-align: center;
