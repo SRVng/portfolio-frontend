@@ -1,0 +1,20 @@
+@import '../vars.css';
+
+.container {
+    border: 1px solid black;
+
+    height: 30px;
+
+    text-align: center;
+
+    background-color: gray;
+}
+
+.container p {
+    margin: auto;
+    margin-top: 5px;
+    color: black;
+
+    font-family: var(--primary-font);
+    font-style: italic
+}

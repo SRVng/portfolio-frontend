@@ -1,0 +1,69 @@
+@import '../css/vars.css';
+
+.container {
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+
+    font-family: var(--primary-font);
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+.container :nth-child(-2n+1) {
+    text-shadow: 0 0 6px #fff;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: -100%;
+    }
+    20% {
+        background-position: -100%;
+    }
+    40% {
+        background-position: -50%;
+    }
+    60% {
+        background-position: 0%;
+    }
+    80% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.coloredText {
+    background-image: linear-gradient(to left bottom, #d16ba5, #ee7793, #fe8b80, #ffa673, #fbc270, #f2d06c, #e5de6d, #d3ec74, #c2f06a, #adf363, #92f75f, #6efb5f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: colorChange 10s infinite alternate-reverse;
+    text-shadow: none;
+}
+
+.lineAnimation {
+    border: 2px solid black;
+    height: 200px;
+}
+
+.arrow {
+    height: 110px;
+}
+
+.arrow p {
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    text-shadow: 0 0 10px white;
+
+    padding: 20px;
+}

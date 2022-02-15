@@ -1,0 +1,39 @@
+@import './vars.css';
+
+.container {
+    display: grid;
+    height: 90vh;
+    margin-top: 300px;
+    
+    grid-template-columns: 1fr 1fr 0.1fr;
+}
+
+.canvasContainer {
+    display: block;
+    height: 90vh;
+}
+
+.description {
+    padding: 20px 40px;
+    color: var(--text-color);
+
+    font-family: var(--primary-font);
+}
+
+.description h1 {
+    text-shadow: 0px 0px 20px cyan;
+}
+
+.description p {
+
+    text-shadow: 0px 0px 20px white;
+
+    font-size: large;
+    padding: 20px;
+    width: 500px;
+}
+
+.sideNavBar {
+    width: 8vw;
+    height: 90vh;
+}
