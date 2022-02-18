@@ -3,7 +3,9 @@
 }
 
 body {
-  margin: 0;
+  padding: 16px;
+  margin-left: 85px;
+  transition: margin-left 0.5s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

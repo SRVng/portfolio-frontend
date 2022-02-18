@@ -2,19 +2,12 @@ import { useRef } from 'react'
 import styles from '../css/About.module.css';
 import * as THREE from 'three';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import SideNavBar from './SideNavBar';
 
 import moonImage from '../texture/moon.jpg';
 import normalImage from '../texture/normal.jpg';
 import spaceImage from '../texture/spaceBg.jpg';
 
-interface SideNavBarProps {
-    setBattleBoobas: Function
-    setRsvpStaking: Function
-    setPortfolioWebsite: Function
-}
-
-const About = (props: SideNavBarProps) => {
+const About = () => {
   return (
     <div className={styles.container}>
         <div className={styles.canvasContainer}>
@@ -25,13 +18,10 @@ const About = (props: SideNavBarProps) => {
         </div>
         <div className={styles.description}>
             <h1>About</h1>
-            <p>Hello! I'm Vut, a self-taught developer, I'm graduated from Thammasat Business Scholl with Finance and Entrepreneurship as a major and minor.</p>
-            <p>I love to code and I'm always learn a new things everyday, I'm pretty much into Frontend Framework  and Blockchain. Aside from coding I'm interested in Music, Gaming, and Anime</p>
+            <p>Hello! I'm Vut, a self-taught developer, I'm graduated from Thammasat Business School with Finance and Entrepreneurship as a major and minor.</p>
+            <p>I love to code and I'm always learn a new things everyday, I'm pretty much into Frontend Framework  and Blockchain. Aside from coding I'm interested in Music, Gaming, and Anime.</p>
             <p>My programming language stack: Typescript, Rust, Python ,and Solidity.</p>
-            <p>I'm doing nothing currently except from a learning and building project loop, so if you are reading this please consider to hire me &#128526;</p>
-        </div>
-        <div className={styles.sideNavBar}>
-            <SideNavBar about={true} {...props} />
+            <p>I'm looking for a challenging opportunity, If you are interested in working with me please don't hesitate to reach me out!  &#128526;</p>
         </div>
     </div>
   )

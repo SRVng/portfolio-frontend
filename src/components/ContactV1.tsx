@@ -1,16 +1,9 @@
 import React from 'react'
 import styles from '../css/Contact.module.css'
-import SideNavBar from './SideNavBar'
 
 import profilePic from '../img/pxArt.png';
 
-interface SideNavBarProps {
-    setBattleBoobas: Function
-    setRsvpStaking: Function
-    setPortfolioWebsite: Function
-}
-
-const Contact = (props: SideNavBarProps) => {
+const Contact = () => {
 
   return (
     <div className={styles.container}>
@@ -70,9 +63,6 @@ const Contact = (props: SideNavBarProps) => {
                     </ButtonBox>
                 </div>
             </ContactBox>
-        </div>
-        <div className={styles.sideNavBar}>
-            <SideNavBar contact={true} {...props}/>
         </div>
     </div>
   )

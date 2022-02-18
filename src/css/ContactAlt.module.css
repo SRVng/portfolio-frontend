@@ -1,0 +1,50 @@
+@import './vars.css';
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: var(--text-color);
+
+    margin: auto;
+    margin-bottom: 200px;
+
+    font-family: var(--primary-font);
+}
+
+.iconBlock {
+    border: 2px solid white;
+    border-radius: 120px;
+
+    width: 100px;
+    padding: 10px;
+
+    margin: auto;
+}
+
+.infoBlock {
+    text-align: center;
+    height: 100px;
+}
+
+.infoBlock p {
+    text-shadow: 2px 2px 5px white;
+}
+
+.infoBlock button {
+    color: var(--text-color);
+
+    border: 2px double transparent;
+    border-radius: 20px;
+
+    padding: 6px;
+
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    cursor: pointer;
+}
+
+.infoBlock button:hover {
+    box-shadow: 0px 0px 3px 3px white;
+}

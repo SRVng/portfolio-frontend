@@ -1,17 +1,10 @@
 .container {
-    display: grid;
     height: 130vh;
+
     margin-top: 300px;
-    
-    grid-template-columns: 2fr 0.1fr;
 }
 
 .canvasContainer {
     display: block;
-    height: 90vh;
-}
-
-.sideNavBar {
-    width: 8vw;
     height: 90vh;
 }

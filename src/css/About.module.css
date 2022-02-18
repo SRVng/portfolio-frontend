@@ -5,7 +5,7 @@
     height: 90vh;
     margin-top: 300px;
     
-    grid-template-columns: 1fr 1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .canvasContainer {
@@ -31,9 +31,4 @@
     font-size: large;
     padding: 20px;
     width: 500px;
-}
-
-.sideNavBar {
-    width: 8vw;
-    height: 90vh;
 }

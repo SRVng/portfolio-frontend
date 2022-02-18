@@ -2,7 +2,7 @@ import { Canvas, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import styles from '../css/Portfolio.module.css';
-import SideNavBar, { RobertoFont, TextWithHover, TextWithHoverColored } from './SideNavBar';
+import { RobertoFont, TextWithHover, TextWithHoverColored } from './utils';
 import { OrbitControls, OrthographicCamera, PerspectiveCamera, Text } from '@react-three/drei';
 import spaceBackground from '../texture/space.jpg'
 
@@ -23,21 +23,12 @@ const Portfolio = (props: PortfolioProps) => {
 
     const { setBattleBoobas, setRsvpStaking, setPortfolioWebsite } = props
 
-    const sideNavBarProps = {
-        setBattleBoobas,
-        setRsvpStaking,
-        setPortfolioWebsite
-    };
-
   return (
     <div className={styles.container}>
         <div className={styles.canvasContainer}>
         <Canvas>
             <ThreeBox {...props}/>
         </Canvas>
-        </div>
-        <div className={styles.sideNavBar}>
-            <SideNavBar portfolio={true} {...sideNavBarProps}/>
         </div>
     </div>
   )
