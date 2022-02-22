@@ -41,7 +41,7 @@ const MobileMenu = (props: PortfolioProps) => {
     const handlePortfolio = () => {
         setMenuOpen(false);
         window.scrollTo({
-          top: 2271.2,
+          top: 1852,
           left: 0,
           behavior: 'smooth'
         })
@@ -90,7 +90,7 @@ const MobileMenu = (props: PortfolioProps) => {
       const handleContact = () => {
         setMenuOpen(false);
         window.scrollTo({
-          top: 3148,
+          top: 2500,
           left: 0,
           behavior: 'smooth'
         })
