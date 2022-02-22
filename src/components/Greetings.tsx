@@ -7,11 +7,11 @@ const Greetings = () => {
   return (
     <div className={styles.container}>
         <div className={styles.textContainer}>
-            <h1>
+            <p>
                 <span>Greetings!</span> <br/>
                 <span>I'm Vut,</span> &nbsp;
                 <span className={styles.coloredText}>Nice to meet you.</span>
-            </h1>
+            </p>
         </div>
         <div className={styles.lineAnimation}>
             <Canvas>
