@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import About from './components/About'
 import Contact from './components/ContactV1'
 import Greetings from './components/Greetings'
@@ -10,6 +10,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ContactAlt from './components/ContactAlt'
 
 function App() {
+
+  const [width, setWindowWidth] = useState(0);
 
   const [battleBoobas, setBattleBoobas] = useState(false);
   const [rsvpStaking, setRsvpStaking] = useState(false);
@@ -24,17 +26,32 @@ function App() {
     setPortfolioWebsite
   };
 
+  const updateWidth = () => {
+    const width = window.screen.width;
+    setWindowWidth(width);
+  }
+
+  useEffect(() => {
+    updateWidth();
+    
+    window.addEventListener("resize", updateWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    }
+  }, [])
+
   return (
-    <Layout {...portfolioProps}>
+    <Layout width={width} {...portfolioProps}>
       <div>
         <Greetings />
-        <AnimationOnScroll animateIn='animate__fadeInDownBig' animateOut='animate__fadeOutDownBig'>
+        <AnimationOnScroll animateIn='animate__fadeInDownBig'>
           <About />
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn='animate__slideInLeft' animateOut='animate__slideOutRight'>
-          <Portfolio {...portfolioProps}/>
+        <AnimationOnScroll animateIn='animate__slideInLeft'>
+          <Portfolio width={width} {...portfolioProps}/>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn='animate__slideInRight'>
+        <AnimationOnScroll animateIn='animate__slideInLeft'>
           <ContactAlt />
         </AnimationOnScroll>
       </div>
