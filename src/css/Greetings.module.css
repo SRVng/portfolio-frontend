@@ -9,7 +9,7 @@
     text-align: center;
 
     font-family: var(--primary-font);
-    font-size: 56px;
+    font-size: 48px;
     color: var(--text-color);
 }
 
@@ -88,7 +88,7 @@
     }
     .textContainer {
         min-height: 180px;
-        font-size: 36px;
+        font-size: 28px;
         text-align: center;
     }
     .arrow {
