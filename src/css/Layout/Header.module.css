@@ -1,11 +1,18 @@
 @import '../vars.css';
 
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
 .navBarContainer {
     display: flex;
     height: 60px;
 
     padding: 60px 80px;
     gap: 80px;
+
+    transition: 0.5s;
 }
 
 .line {
@@ -16,6 +23,7 @@
 
 .homeBtn button {
     opacity: 0;
+    display: none;
 
     border-radius: 30px;
     padding: 20px 20px;
@@ -45,4 +53,26 @@
 .menu :nth-child(n) {
     height: 20px;
     text-align: center;
+}
+
+.mobileMenuContainer {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 1180px) {
+    .line {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 820px) and (orientation: portrait) {
+    .line {
+        width: 20vw;
+    }
 }

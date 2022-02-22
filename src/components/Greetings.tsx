@@ -5,8 +5,8 @@ import styles from '../css/Greetings.module.css';
 
 const Greetings = () => {
   return (
-    <div>
-        <div className={styles.container}>
+    <div className={styles.container}>
+        <div className={styles.textContainer}>
             <h1>
                 <span>Greetings!</span> <br/>
                 <span>I'm Vut,</span> &nbsp;

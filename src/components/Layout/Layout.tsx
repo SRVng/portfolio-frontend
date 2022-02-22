@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import MobileMenu from '../MobileMenu'
 import MySideBar from '../MySideBar'
 import Footer from './Footer'
 import Header from './Header'
 
-interface PortfolioProps {
+interface LayoutProps {
   battleBoobas: boolean
   setBattleBoobas: Function
   rsvpStaking: boolean
@@ -11,14 +12,16 @@ interface PortfolioProps {
   portfolioWebsite: boolean
   setPortfolioWebsite: Function
   children: React.ReactChild
+  width: number
 }
 
-const Layout = (props: PortfolioProps) => {
+const Layout = (props: LayoutProps) => {
 
   return (
     <div>
         <Header />
         <MySideBar {...props}/>
+        <MobileMenu {...props}/>
         <main>{props.children}</main>
         <Footer />
     </div>

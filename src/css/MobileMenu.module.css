@@ -1,0 +1,78 @@
+@import './vars.css';
+
+.container {
+    display: none;
+}
+
+.muiIcons {
+    vertical-align: middle;
+    padding-bottom: 3px;
+    margin-right: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+
+        position: fixed;
+        top: 0;
+        z-index: 2;
+
+        width: 100%;
+        margin: 0 auto;
+
+        /* background-color: gray; */
+    }
+    .menuIcon {
+        margin: 0 auto;
+        margin-right: 2rem;
+    }
+    .menuIcon p {
+        text-shadow: 2px 2px white;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 64px;
+        left: -100%;
+
+        opacity: 1;
+
+        transition: 0.5s ease;
+    }
+    .menuActive {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        position: absolute;
+        top: 64px;
+        left: 0;
+
+        opacity: 1;
+
+        background: white;
+
+        transition: 0.5s ease;
+
+        font-family: var(--primary-font);
+        font-weight: bold;
+        font-size: larger;
+
+        z-index: 1;
+    }
+    .miniContact {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

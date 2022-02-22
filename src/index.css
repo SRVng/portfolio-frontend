@@ -14,3 +14,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 8px;
+    margin-left: 0px;
+    transition: margin-left 0.5s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

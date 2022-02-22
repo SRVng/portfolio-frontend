@@ -30,6 +30,7 @@ const Header = () => {
   }
 
   return (
+    <div className={styles.container}>
     <div className={styles.navBarContainer}>
       <div className={styles.homeBtn}>
         <button>Home</button>
@@ -45,6 +46,7 @@ const Header = () => {
         <p onClick={handlePortfolio}>Portfolio</p>
         <p onClick={handleContact}>Contact</p>
       </div>
+    </div>
     </div>
   )
 }

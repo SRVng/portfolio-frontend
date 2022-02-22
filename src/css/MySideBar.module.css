@@ -37,3 +37,9 @@
     padding-bottom: 3px;
     margin-right: 30px;
 }
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+}
