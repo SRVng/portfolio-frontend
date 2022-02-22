@@ -87,6 +87,7 @@
         width: 100%;
     }
     .textContainer {
+        min-height: 180px;
         font-size: 20px;
         text-align: center;
     }
